@@ -30,11 +30,14 @@ console.log('example task:', processFirstItem(['foo','bar'],function(str){return
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+  - the difference between counter1 and counter2 is that everytime counter1 is invoked it goes up by count and it could have simultaneous counters going on at the same time, instead counter2 can only take one counter at the time.
+
   2. Which of the two uses a closure? How can you tell?
+  - counter1 uses closure because it has a nested function accesing an external variable
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+  - if you want to run simultaneous counters then counter1 is preferable. if not counter2 is better
 */
 
 // counter1 code
